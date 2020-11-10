@@ -21,9 +21,9 @@ enum LED_onoff {
 enum LED_color {
     赤,
     オレンジ,
-    き色,
+    き,
     みどり,
-    水色,
+    水,
     青,
     むらさき,
 }
@@ -65,7 +65,7 @@ namespace natumi_blocks {
         basic.pause(mode);
          return
         }
-        case LED_color.き色:
+        case LED_color.き:
         pins.digitalWritePin(DigitalPin.P14, 1);
         basic.pause(mode);
         if (mode ==0) {
@@ -85,7 +85,7 @@ namespace natumi_blocks {
         basic.pause(mode);
         return
         }
-            case LED_color.水色:
+            case LED_color.水:
         pins.digitalWritePin(DigitalPin.P14, 1);
         basic.pause(mode);
         if (mode ==0) {
