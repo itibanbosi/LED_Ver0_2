@@ -15,8 +15,8 @@ enum onoff {
 enum LED_onoff {
     しない=0,
     ゆっくり=2000,
-    ふつう=1000,
-    はやく=500,
+    ふつう=800,
+    はやく=300,
 }
 enum LED_color {
     赤,
@@ -63,6 +63,7 @@ namespace natumi_blocks {
         } else {
         pins.digitalWritePin(DigitalPin.P14, 0);
         basic.pause(mode);
+         return
         }
         case LED_color.き色:
         pins.digitalWritePin(DigitalPin.P14, 1);
@@ -72,15 +73,17 @@ namespace natumi_blocks {
         } else {
         pins.digitalWritePin(DigitalPin.P14, 0);
         basic.pause(mode);
+        return
         }
             case LED_color.みどり:
-        pins.digitalWritePin(DigitalPin.P14, 1);
+        pins.digitalWritePin(DigitalPin.P13, 1);
         basic.pause(mode);
         if (mode ==0) {
             return
         } else {
-        pins.digitalWritePin(DigitalPin.P14, 0);
+        pins.digitalWritePin(DigitalPin.P13, 0);
         basic.pause(mode);
+        return
         }
             case LED_color.水色:
         pins.digitalWritePin(DigitalPin.P14, 1);
@@ -90,6 +93,7 @@ namespace natumi_blocks {
         } else {
         pins.digitalWritePin(DigitalPin.P14, 0);
         basic.pause(mode);
+        return
         }
             case LED_color.青:
         pins.digitalWritePin(DigitalPin.P14, 1);
@@ -97,8 +101,9 @@ namespace natumi_blocks {
         if (mode ==0) {
             return
         } else {
-        pins.digitalWritePin(DigitalPin.P14, 0);
+        pins.digitalWritePin(DigitalPin.P14, 0)
         basic.pause(mode);
+        return
         }
             case LED_color.むらさき:
         pins.digitalWritePin(DigitalPin.P14, 1);
@@ -108,6 +113,7 @@ namespace natumi_blocks {
         } else {
         pins.digitalWritePin(DigitalPin.P14, 0);
         basic.pause(mode);
+        return
         }
     }
     }
