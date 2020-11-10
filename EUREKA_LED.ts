@@ -14,9 +14,9 @@ enum onoff {
 
 enum LED_onoff {
     点めつしない=0,
-    ゆっくり=2,
-    ふつう=1,
-    はやく=0.5,
+    ゆっくり=2000,
+    ふつう=1000,
+    はやく=500,
 }
 enum LED_color {
     赤,
@@ -47,10 +47,14 @@ namespace natumi_blocks {
     switch (color) {
         case LED_color.赤:
         pins.digitalWritePin(DigitalPin.P14, 1);
-        basic.pause(mode * 1000);
+        basic.pause(mode);
+        if (mode ==0) {
+            return
+        } else {
         pins.digitalWritePin(DigitalPin.P14, 0);
-        basic.pause(mode * 1000);
+        basic.pause(mode);
         }
+    }
 /*      case eureka_tlp.Bﾎﾟｰﾄ:
         if (mode == onoff.ON) {
           return pins.digitalWritePin(DigitalPin.P16, 1);
@@ -71,9 +75,5 @@ namespace natumi_blocks {
 
 
 */
-
 }
-
-
-
 }
