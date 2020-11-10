@@ -40,7 +40,7 @@ namespace natumi_blocks {
     export function eureka_buz_set() {
     pins.analogSetPitchPin(AnalogPin.P8);
   }
-  //% color="#40a6ff" weight=17 blockId=eureka_white block="単体_LED |%mode| |%pin|" group="1_たん体ＬＥＤ"
+  //% color="#ff7b00" weight=17 blockId=eureka_white block="単体_LED |%mode| |%pin|" group="1_たん体ＬＥＤ"
   export function eureka_white(port: eureka_IO, mode: onoff) {
     switch (port) {
       case eureka_IO.Aﾎﾟｰﾄ:
@@ -64,7 +64,7 @@ namespace natumi_blocks {
     }
   }
 
-  //% color="#40a6ff" weight=17 blockId=eureka_white2 block="単体_LED　点めつは|%mode|　ﾎﾟｰﾄ|%pin|" group="1_たん体ＬＥＤ"
+  //% color="#ff7b00" weight=17 blockId=eureka_white2 block="単体_LED　点めつは|%mode|　ﾎﾟｰﾄ|%pin|" group="1_たん体ＬＥＤ"
   export function eureka_white2(mode: LED_onoff ,port: eureka_IO ) {
     switch (port) {
       case eureka_IO.Aﾎﾟｰﾄ:
@@ -174,7 +174,7 @@ namespace natumi_blocks {
       }
     }
 
-    //% color="#4741f1" weight=54 blockId=eureka_tl_blue block="青 点灯|%mode| |%pin|" group="2_にじ色ＬＥＤ"
+    //% color="#4741f1" weight=53 blockId=eureka_tl_blue block="青 点灯|%mode| |%pin|" group="2_にじ色ＬＥＤ"
     export function eureka_tl_blue(mode: onoff, pin: eureka_tlp) {
     switch (pin) {
       case eureka_tlp.Aﾎﾟｰﾄ:
@@ -191,7 +191,7 @@ namespace natumi_blocks {
         }
     }
   }
-  //% color="#009A00" weight=53 blockId=eureka_tl_green block="みどり 点灯|%mode| |%pin|" group="2_にじ色ＬＥＤ"
+  //% color="#009A00" weight=52 blockId=eureka_tl_green block="みどり 点灯|%mode| |%pin|" group="2_にじ色ＬＥＤ"
   export function eureka_tl_green(mode: onoff, pin: eureka_tlp) {
     switch (pin) {
       case eureka_tlp.Aﾎﾟｰﾄ:
@@ -208,7 +208,7 @@ namespace natumi_blocks {
         }
     }
   }
-  //% color="#ff4940" weight=52 blockId=eureka_tl_red block="赤 点灯|%mode| |%pin|" group="2_にじ色ＬＥＤ"
+  //% color="#ff4940" weight=51 blockId=eureka_tl_red block="赤 点灯|%mode| |%pin|" group="2_にじ色ＬＥＤ"
   export function eureka_tl_red(mode: onoff, pin: eureka_tlp) {
     switch (pin) {
       case eureka_tlp.Aﾎﾟｰﾄ:
