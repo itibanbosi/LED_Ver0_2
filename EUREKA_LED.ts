@@ -65,7 +65,7 @@ namespace natumi_blocks {
   }
 
   //% color="#40a6ff" weight=17 blockId=eureka_white2 block="単体_LED　点めつは|%mode|　ﾎﾟｰﾄ|%pin|" group="1_たん体ＬＥＤ"
-  export function eureka_white2(port: eureka_IO, mode: LED_onoff) {
+  export function eureka_white2(mode: LED_onoff ,port: eureka_IO ) {
     switch (port) {
       case eureka_IO.Aﾎﾟｰﾄ:
         pins.digitalWritePin(DigitalPin.P0, 1);
