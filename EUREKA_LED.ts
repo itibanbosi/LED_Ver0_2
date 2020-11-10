@@ -28,7 +28,7 @@ enum LED_color {
     むらさき,
 }
 
-//% color="#3943c2" block="はじめの一歩　V0.90"
+//% color="#ff7b00" block="はじめの一歩　V0.90"
 namespace natumi_blocks {
 
     //% blockId=eureka_buz_set 
@@ -42,7 +42,7 @@ namespace natumi_blocks {
   }
 
 
-    //% color="#4741f1" weight=54 blockId=eureka_tl_blue block="多色LED 色|%color| 点めつ|%mode| ポート|%pin|" group="2_信号機ユニット"
+    //% color="#858585" weight=54 blockId=eureka_tl_blue block="多色LED 色|%color| 点めつ|%mode| ポート|%pin|" group="2_信号機ユニット"
     export function eureka_tl_blue(color:LED_color, mode:LED_onoff, pin: eureka_tlp) {
     switch (color) {
         case LED_color.赤:
