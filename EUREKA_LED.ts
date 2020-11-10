@@ -40,7 +40,29 @@ namespace natumi_blocks {
     export function eureka_buz_set() {
     pins.analogSetPitchPin(AnalogPin.P8);
   }
-
+  //% color="#40a6ff" weight=17 blockId=eureka_white block="単体_LED |%mode| |%pin|" group="1_たん体ＬＥＤ"
+  export function eureka_white(port: eureka_IO, mode: onoff) {
+    switch (port) {
+      case eureka_IO.Aﾎﾟｰﾄ:
+        if (mode == onoff.ON) {
+          return pins.digitalWritePin(DigitalPin.P0, 1);
+        } else {
+          return pins.digitalWritePin(DigitalPin.P0, 0);
+        }
+      case eureka_IO.Bﾎﾟｰﾄ:
+        if (mode == onoff.ON) {
+          return pins.digitalWritePin(DigitalPin.P1, 1);
+        } else {
+          return pins.digitalWritePin(DigitalPin.P1, 0);
+        }
+      case eureka_IO.Cﾎﾟｰﾄ:
+        if (mode == onoff.ON) {
+          return pins.digitalWritePin(DigitalPin.P2, 1);
+        } else {
+          return pins.digitalWritePin(DigitalPin.P2, 0);
+        }
+    }
+  }
 
     //% color="#858585" weight=54 blockId=eureka_fullcolor block="にじ色ＬＥＤ |%color|色で点めつは|%mode| ﾎﾟｰﾄ|%pin|" group="2_にじ色ＬＥＤ"
     export function eureka_fullcolor(color:LED_color, mode:LED_onoff, pin: eureka_tlp) {
