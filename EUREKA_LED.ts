@@ -70,7 +70,7 @@ namespace natumi_blocks {
       case eureka_IO.Aﾎﾟｰﾄ:
         pins.digitalWritePin(DigitalPin.P0, 1);
         basic.pause(mode);
-        if (mode=0){
+        if (mode == 0){
             return
         } else {
         pins.digitalWritePin(DigitalPin.P0, 0);
