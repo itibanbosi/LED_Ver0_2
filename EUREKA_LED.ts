@@ -13,7 +13,7 @@ enum onoff {
 }
 
 enum LED_onoff {
-    点めつしない=0,
+    しない=0,
     ゆっくり=2000,
     ふつう=1000,
     はやく=500,
@@ -42,7 +42,7 @@ namespace natumi_blocks {
   }
 
 
-    //% color="#858585" weight=54 blockId=eureka_tl_blue block="にじ色ＬＥＤ 色|%color| 点めつ|%mode| ﾎﾟｰﾄ|%pin|" group="2_信号機ユニット"
+    //% color="#858585" weight=54 blockId=eureka_tl_blue block="にじ色ＬＥＤ |%color|色で点めつは|%mode| ﾎﾟｰﾄ|%pin|" group="2_信号機ユニット"
     export function eureka_tl_blue(color:LED_color, mode:LED_onoff, pin: eureka_tlp) {
     switch (color) {
         case LED_color.赤:
