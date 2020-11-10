@@ -46,6 +46,60 @@ namespace natumi_blocks {
     export function eureka_tl_blue(color:LED_color, mode:LED_onoff, pin: eureka_tlp) {
     switch (color) {
         case LED_color.赤:
+        pins.digitalWritePin(DigitalPin.P0, 1);
+        basic.pause(mode);
+        if (mode ==0) {
+            return
+        } else {
+        pins.digitalWritePin(DigitalPin.P0, 0);
+        basic.pause(mode);
+        }
+        case LED_color.オレンジ:
+        pins.digitalWritePin(DigitalPin.P14, 1);
+        basic.pause(mode);
+        if (mode ==0) {
+            return
+        } else {
+        pins.digitalWritePin(DigitalPin.P14, 0);
+        basic.pause(mode);
+        }
+        case LED_color.き色:
+        pins.digitalWritePin(DigitalPin.P14, 1);
+        basic.pause(mode);
+        if (mode ==0) {
+            return
+        } else {
+        pins.digitalWritePin(DigitalPin.P14, 0);
+        basic.pause(mode);
+        }
+            case LED_color.みどり:
+        pins.digitalWritePin(DigitalPin.P14, 1);
+        basic.pause(mode);
+        if (mode ==0) {
+            return
+        } else {
+        pins.digitalWritePin(DigitalPin.P14, 0);
+        basic.pause(mode);
+        }
+            case LED_color.水色:
+        pins.digitalWritePin(DigitalPin.P14, 1);
+        basic.pause(mode);
+        if (mode ==0) {
+            return
+        } else {
+        pins.digitalWritePin(DigitalPin.P14, 0);
+        basic.pause(mode);
+        }
+            case LED_color.青:
+        pins.digitalWritePin(DigitalPin.P14, 1);
+        basic.pause(mode);
+        if (mode ==0) {
+            return
+        } else {
+        pins.digitalWritePin(DigitalPin.P14, 0);
+        basic.pause(mode);
+        }
+            case LED_color.むらさき:
         pins.digitalWritePin(DigitalPin.P14, 1);
         basic.pause(mode);
         if (mode ==0) {
@@ -55,25 +109,11 @@ namespace natumi_blocks {
         basic.pause(mode);
         }
     }
-/*      case eureka_tlp.Bﾎﾟｰﾄ:
-        if (mode == onoff.ON) {
-          return pins.digitalWritePin(DigitalPin.P16, 1);
-        } else {
-          return pins.digitalWritePin(DigitalPin.P16, 0);
-        }
     }
-
-
-  }
-
-
 
   //% color="#1E90FF" weight=10 block="待ち時間（秒）|%second|" group="機能"
   //% second.min=0 second.max=10
   export function driveForwards(second: number): void {
     basic.pause(second * 1000);
-
-
-*/
-}
+    }
 }
