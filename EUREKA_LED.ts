@@ -13,10 +13,10 @@ enum onoff {
 }
 
 enum LED_onoff {
-    点めつしない,
-    A=1,
-    B=2,
-    C=3,
+    点めつしない=0,
+    ゆっくり=2,
+    ふつう=1,
+    はやく=0.5,
 }
 enum LED_color {
     赤,
@@ -27,6 +27,7 @@ enum LED_color {
     青,
     むらさき,
 }
+
 //% color="#3943c2" block="はじめの一歩　V0.90"
 namespace natumi_blocks {
 
@@ -41,22 +42,23 @@ namespace natumi_blocks {
   }
 
 
-    //% color="#4741f1" weight=54 blockId=eureka_tl_blue block="青信号 点灯|%mode| |%pin|" group="2_信号機ユニット"
-    export function eureka_tl_blue(mode: onoff, pin: eureka_tlp) {
-    switch (pin) {
-      case eureka_tlp.Aﾎﾟｰﾄ:
-        if (mode == onoff.ON) {
-          return pins.digitalWritePin(DigitalPin.P14, 1);
-        } else {
-          return pins.digitalWritePin(DigitalPin.P14, 0);
+    //% color="#4741f1" weight=54 blockId=eureka_tl_blue block="多色LED 色|%color| 点めつ|%mode| ポート|%pin|" group="2_信号機ユニット"
+    export function eureka_tl_blue(color:LED_color, mode:LED_onoff, pin: eureka_tlp) {
+    switch (color) {
+        case LED_color.赤:
+        pins.digitalWritePin(DigitalPin.P14, 1);
+        basic.pause(mode * 1000);
+        pins.digitalWritePin(DigitalPin.P14, 0);
         }
-      case eureka_tlp.Bﾎﾟｰﾄ:
+/*      case eureka_tlp.Bﾎﾟｰﾄ:
         if (mode == onoff.ON) {
           return pins.digitalWritePin(DigitalPin.P16, 1);
         } else {
           return pins.digitalWritePin(DigitalPin.P16, 0);
         }
     }
+
+
   }
 
 
@@ -65,7 +67,11 @@ namespace natumi_blocks {
   //% second.min=0 second.max=10
   export function driveForwards(second: number): void {
     basic.pause(second * 1000);
-  }
+
+
+*/
+
+}
 
 
 
