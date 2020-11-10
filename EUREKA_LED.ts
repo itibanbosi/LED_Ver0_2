@@ -42,7 +42,7 @@ namespace natumi_blocks {
   }
 
 
-    //% color="#858585" weight=54 blockId=eureka_tl_blue block="にじ色ＬＥＤ |%color|色で点めつは|%mode| ﾎﾟｰﾄ|%pin|" group="2_にじ色ＬＥＤ"
+    //% color="#858585" weight=54 blockId=eureka_fullcolor block="にじ色ＬＥＤ |%color|色で点めつは|%mode| ﾎﾟｰﾄ|%pin|" group="2_にじ色ＬＥＤ"
     export function eureka_fullcolor(color:LED_color, mode:LED_onoff, pin: eureka_tlp) {
     switch (color) {
         case LED_color.赤:
@@ -135,8 +135,8 @@ namespace natumi_blocks {
         }
     }
   }
-  //% color="#ffa800" weight=53 blockId=eureka_tl_yellow block="みどり 点灯|%mode| |%pin|" group="2_にじ色ＬＥＤ"
-  export function eureka_tl_yellow(mode: onoff, pin: eureka_tlp) {
+  //% color="#009A00" weight=53 blockId=eureka_tl_green block="みどり 点灯|%mode| |%pin|" group="2_にじ色ＬＥＤ"
+  export function eureka_tl_green(mode: onoff, pin: eureka_tlp) {
     switch (pin) {
       case eureka_tlp.Aﾎﾟｰﾄ:
         if (mode == onoff.ON) {
