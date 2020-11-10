@@ -49,6 +49,7 @@ namespace natumi_blocks {
         pins.digitalWritePin(DigitalPin.P14, 1);
         basic.pause(mode * 1000);
         pins.digitalWritePin(DigitalPin.P14, 0);
+        basic.pause(mode * 1000);
         }
 /*      case eureka_tlp.Bﾎﾟｰﾄ:
         if (mode == onoff.ON) {
