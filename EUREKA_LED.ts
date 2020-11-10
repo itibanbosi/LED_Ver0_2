@@ -42,7 +42,7 @@ namespace natumi_blocks {
   }
 
 
-    //% color="#858585" weight=54 blockId=eureka_tl_blue block="多色LED 色|%color| 点めつ|%mode| ポート|%pin|" group="2_信号機ユニット"
+    //% color="#858585" weight=54 blockId=eureka_tl_blue block="にじ色ＬＥＤ 色|%color| 点めつ|%mode| ﾎﾟｰﾄ|%pin|" group="2_信号機ユニット"
     export function eureka_tl_blue(color:LED_color, mode:LED_onoff, pin: eureka_tlp) {
     switch (color) {
         case LED_color.赤:
