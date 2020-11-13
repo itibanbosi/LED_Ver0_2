@@ -112,7 +112,8 @@ namespace natumi_blocks {
         return
         }
         case LED_color.オレンジ:
-        pins.digitalWritePin(DigitalPin.P14, 1);
+        pins.digitalWritePin(DigitalPin.P0, 1);
+        pins.analogWritePin(AnalogPin.P13, 240)
         basic.pause(mode);
         if (mode ==0) {
             return
