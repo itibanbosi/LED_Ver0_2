@@ -26,6 +26,7 @@ enum LED_color {
     水,
     青,
     むらさき,
+    白,
 }
 
 //% color="#ff7b00" block="はじめの一歩　V0.90"
@@ -108,6 +109,8 @@ namespace natumi_blocks {
             return
         } else {
         pins.digitalWritePin(DigitalPin.P0, 0);
+        pins.digitalWritePin(DigitalPin.P13, 0);
+        pins.digitalWritePin(DigitalPin.P14, 0);
         basic.pause(mode);
         return
         }
@@ -118,16 +121,21 @@ namespace natumi_blocks {
         if (mode ==0) {
             return
         } else {
+        pins.digitalWritePin(DigitalPin.P0, 0);
+        pins.digitalWritePin(DigitalPin.P13, 0);
         pins.digitalWritePin(DigitalPin.P14, 0);
         basic.pause(mode);
          return
         }
         case LED_color.き:
-        pins.digitalWritePin(DigitalPin.P14, 1);
+        pins.digitalWritePin(DigitalPin.P0, 1);
+        pins.digitalWritePin(DigitalPin.P13, 1);
         basic.pause(mode);
         if (mode ==0) {
             return
         } else {
+        pins.digitalWritePin(DigitalPin.P0, 0);
+        pins.digitalWritePin(DigitalPin.P13, 0);
         pins.digitalWritePin(DigitalPin.P14, 0);
         basic.pause(mode);
         return
@@ -138,18 +146,24 @@ namespace natumi_blocks {
         if (mode ==0) {
             return
         } else {
+        pins.digitalWritePin(DigitalPin.P0, 0);
         pins.digitalWritePin(DigitalPin.P13, 0);
+        pins.digitalWritePin(DigitalPin.P14, 0);
         basic.pause(mode);
         return
         }
             case LED_color.水:
-        pins.digitalWritePin(DigitalPin.P14, 1);
+        pins.analogWritePin(AnalogPin.P0, 388)
+        pins.digitalWritePin(DigitalPin.P13, 1);
+        pins.analogWritePin(AnalogPin.P14, 767)
         basic.pause(mode);
         if (mode ==0) {
             return
         } else {
+        pins.digitalWritePin(DigitalPin.P0, 0);
+        pins.digitalWritePin(DigitalPin.P13, 0);
         pins.digitalWritePin(DigitalPin.P14, 0);
-        basic.pause(mode);
+         basic.pause(mode);
         return
         }
             case LED_color.青:
@@ -158,16 +172,35 @@ namespace natumi_blocks {
         if (mode ==0) {
             return
         } else {
-        pins.digitalWritePin(DigitalPin.P14, 0)
+        pins.digitalWritePin(DigitalPin.P0, 0);
+        pins.digitalWritePin(DigitalPin.P13, 0);
+        pins.digitalWritePin(DigitalPin.P14, 0);
         basic.pause(mode);
         return
         }
             case LED_color.むらさき:
+        pins.analogWritePin(AnalogPin.P0, 338)
         pins.digitalWritePin(DigitalPin.P14, 1);
         basic.pause(mode);
         if (mode ==0) {
             return
         } else {
+        pins.digitalWritePin(DigitalPin.P0, 0);
+        pins.digitalWritePin(DigitalPin.P13, 0);
+        pins.digitalWritePin(DigitalPin.P14, 0);
+        basic.pause(mode);
+        return
+        }
+            case LED_color.白:
+        pins.digitalWritePin(DigitalPin.P0, 1);
+        pins.digitalWritePin(DigitalPin.P13, 1);
+        pins.digitalWritePin(DigitalPin.P14, 1);
+        basic.pause(mode);
+        if (mode ==0) {
+            return
+        } else {
+        pins.digitalWritePin(DigitalPin.P0, 0);
+        pins.digitalWritePin(DigitalPin.P13, 0);
         pins.digitalWritePin(DigitalPin.P14, 0);
         basic.pause(mode);
         return
@@ -175,7 +208,7 @@ namespace natumi_blocks {
       }
     }
 
-    //% color="#4741f1" weight=53 blockId=eureka_tl_blue block="青 点灯|%mode| |%pin|" group="2_にじ色ＬＥＤ"
+    //% color="#4741f1" weight=53 blockId=eureka_tl_blue block="青 点とう|%mode| |%pin|" group="2_にじ色ＬＥＤ"
     export function eureka_tl_blue(mode: onoff, pin: eureka_tlp) {
     switch (pin) {
       case eureka_tlp.Aﾎﾟｰﾄ:
@@ -192,7 +225,7 @@ namespace natumi_blocks {
         }
     }
   }
-  //% color="#009A00" weight=52 blockId=eureka_tl_green block="みどり 点灯|%mode| |%pin|" group="2_にじ色ＬＥＤ"
+  //% color="#009A00" weight=52 blockId=eureka_tl_green block="みどり 点とう|%mode| |%pin|" group="2_にじ色ＬＥＤ"
   export function eureka_tl_green(mode: onoff, pin: eureka_tlp) {
     switch (pin) {
       case eureka_tlp.Aﾎﾟｰﾄ:
@@ -209,7 +242,7 @@ namespace natumi_blocks {
         }
     }
   }
-  //% color="#ff4940" weight=51 blockId=eureka_tl_red block="赤 点灯|%mode| |%pin|" group="2_にじ色ＬＥＤ"
+  //% color="#ff4940" weight=51 blockId=eureka_tl_red block="赤 点とう|%mode| |%pin|" group="2_にじ色ＬＥＤ"
   export function eureka_tl_red(mode: onoff, pin: eureka_tlp) {
     switch (pin) {
       case eureka_tlp.Aﾎﾟｰﾄ:
