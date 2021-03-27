@@ -13,10 +13,10 @@ enum onoff {
 }
 
 enum LED_onoff {
-    しない=0,
-    ゆっくり=2000,
-    ふつう=800,
-    はやく=300,
+    No = 0,
+    Slow =2000,
+    Nomal =800,
+    Fast =300,
 }
 enum LED_color {
     赤,
