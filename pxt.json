@@ -12,11 +12,7 @@
         "main.blocks",
         "main.ts",
         "EUREKA_LED.ts",
-<<<<<<< HEAD
         "_locales/ja/led-strings.json"        
-=======
-        "_locales/ja/led-strings.json"
->>>>>>> d16f0e965436fa7583f0ae28ee65e65111f0583f
     ],
     "testFiles": [
         "test.ts"
