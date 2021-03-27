@@ -9,8 +9,6 @@
     },
     "files": [
         "README.md",
-        "main.blocks",
-        "main.ts",
         "EUREKA_LED.ts",
         "_locales/ja/led-strings.json"
     ],
