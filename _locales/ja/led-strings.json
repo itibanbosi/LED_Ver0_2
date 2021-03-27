@@ -3,5 +3,5 @@
     "eureka_IO.Slow|block": "ゆっくり",
     "eureka_IO.Nomal|block": "普通",
     "eureka_IO.Fast|block": "速く",
-    "eureka_IO.blue|block": "青"
+    "LED_color.blue|block": "青"
 }
