@@ -1,7 +1,3 @@
 {
-    "eureka_IO.No|block": "点滅なし",
-    "eureka_IO.Slow|block": "ゆっくり",
-    "eureka_IO.Nomal|block": "普通",
-    "eureka_IO.Fast|block": "速く",
-    "LED_color.blue|block": "青"
+    "LED_color.Red|block": "青"
 }

@@ -19,12 +19,12 @@ enum LED_onoff {
     Fast =300,
 }
 enum LED_color {
-    赤,
+    Red,
     オレンジ,
     き,
     みどり,
     水,
-    blue,
+    青,
     むらさき,
     白,
 }
