@@ -24,7 +24,7 @@ enum LED_color {
     き,
     みどり,
     水,
-    青,
+    Blue,
     むらさき,
     白,
 }
@@ -102,7 +102,7 @@ namespace natumi_blocks {
     //% color="#858585" weight=54 blockId=eureka_fullcolor block="にじ色ＬＥＤ |%color|色で点めつは|%mode| ﾎﾟｰﾄ|%pin|" group="2_にじ色ＬＥＤ"
     export function eureka_fullcolor(color:LED_color, mode:LED_onoff, pin: eureka_tlp) {
     switch (color) {
-        case LED_color.赤:
+        case LED_color.Red:
         pins.digitalWritePin(DigitalPin.P0, 1);
         basic.pause(mode);
         if (mode ==0) {
@@ -166,7 +166,7 @@ namespace natumi_blocks {
          basic.pause(mode);
         return
         }
-            case LED_color.blue:
+            case LED_color.Blue:
         pins.digitalWritePin(DigitalPin.P14, 1);
         basic.pause(mode);
         if (mode ==0) {
