@@ -166,7 +166,7 @@ namespace natumi_blocks {
          basic.pause(mode);
         return
         }
-            case LED_color.青:
+            case LED_color.blue:
         pins.digitalWritePin(DigitalPin.P14, 1);
         basic.pause(mode);
         if (mode ==0) {
