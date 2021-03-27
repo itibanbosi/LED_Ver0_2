@@ -12,7 +12,6 @@
         "main.ts",
         "EUREKA_LED.ts",
         "_locales/ja/led-strings.json"
-        
     ],
     "testFiles": [
         "test.ts"
