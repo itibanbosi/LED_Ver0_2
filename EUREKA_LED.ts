@@ -15,7 +15,7 @@ enum onoff {
 enum LED_onoff {
     No = 0,
     Slow =2000,
-    Nomal =800,
+    Nomal =850,
     Fast =300,
 }
 enum LED_color {
