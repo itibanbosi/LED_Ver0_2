@@ -1,0 +1,14 @@
+{
+  "natumi_blocks.driveForwards|block": "待ち時間（秒）|%second|",
+  "natumi_blocks.eureka_buz_set|block": "ﾕｰﾚｶIOﾎﾞｯｸｽで音をならす",
+  "natumi_blocks.eureka_fullcolor|block": "にじ色ＬＥＤ |%color|色で点めつは|%mode| ﾎﾟｰﾄ|%pin|",
+  "natumi_blocks.eureka_tl_blue|block": "青 点とう|%mode| |%pin|",
+  "natumi_blocks.eureka_tl_green|block": "みどり 点とう|%mode| |%pin|",
+  "natumi_blocks.eureka_tl_red|block": "赤 点とう|%mode| |%pin|",
+  "natumi_blocks.eureka_white2|block": "単体_LED　点めつは|%mode|　ﾎﾟｰﾄ|%pin|",
+  "natumi_blocks.eureka_white|block": "単体_LED |%mode| |%pin|",
+  "{id:category}Natumi_blocks": "Natumi_blocks",
+  "{id:group}1_たん体ＬＥＤ": "1_たん体ＬＥＤ",
+  "{id:group}2_にじ色ＬＥＤ": "2_にじ色ＬＥＤ",
+  "{id:group}機能": "機能"
+}
